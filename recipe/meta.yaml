@@ -1,4 +1,4 @@
-{% set version = '0.1.1' %}
+{% set version = "0.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jumble_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jumble/jumble_{{ version }}.tar.gz
-  sha256: 52277baa244ea26f2a4e68dc5e56df6619eb9b9aff70888374fcc7a4c24260c4
+  sha256: 03cf71e53c180dc2f0e571e57b5475456faba0c6a7e8ab729d462e5323bf3d4e
 
 build:
   number: 0
@@ -40,8 +40,7 @@ about:
   home: https://davidhodge931.github.io/jumble/
   dev_url: https://github.com/davidhodge931/jumble
   license: MIT
-  summary: A discrete colour palette. These colours make it easier to create relatively accessible
-    and colour-blind safe visualisation.
+  summary: A discrete colour palette. These colours make it easier to create relatively accessible and colour-blind safe visualisation.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
