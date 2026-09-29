@@ -1,4 +1,4 @@
-{% set version = "0.1.2" %}
+{% set version = "0.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jumble_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jumble/jumble_{{ version }}.tar.gz
-  sha256: 03cf71e53c180dc2f0e571e57b5475456faba0c6a7e8ab729d462e5323bf3d4e
+  sha256: 9ccafe7926e8aa6a081d69aa3a984631e6eade448e636a26aedbe41bd801e0fa
 
 build:
   number: 0
